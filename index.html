@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Manipulation Demo</title>
+  <style>
+    .highlight {
+      color: white;
+      background-color: teal;
+      padding: 10px;
+    }
+    #dynamic-box {
+      padding: 1rem;
+      background-color: #eee;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">My Interactive Web Page</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="description">Click the buttons below to interact with the page.</p>
+      <button onclick="changeText()">Change Text</button>
+      <button onclick="changeStyle()">Change Style</button>
+      <button onclick="toggleBox()">Add/Remove Element</button>
+    </section>
+
+    <article>
+      <h2>About This Page</h2>
+      <p>This page demonstrates basic JavaScript and DOM manipulation techniques.</p>
+    </article>
+
+    <div id="container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
